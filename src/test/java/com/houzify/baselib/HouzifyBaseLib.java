@@ -39,8 +39,8 @@ public class HouzifyBaseLib
 	@BeforeMethod
 	public void setUp() throws MalformedURLException, InterruptedException{
 		File[] apk = file.listFiles();
-	//	File app = new File(sAPKPath+"app-production-release.apk");
-		File app = new File(sAPKPath+apk[1].getName().toString());
+		File app = new File(sAPKPath+"app-production-release.apk");
+	//	File app = new File(sAPKPath+apk[1].getName().toString());
 		
 		capabilities = new DesiredCapabilities();
 		capabilities.setCapability("automationName",genericLib.getCongigValue(sConfigFile, "AUTOMATIONNAME") );
